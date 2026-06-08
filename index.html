@@ -9,10 +9,8 @@
 </head>
 
 <body>
-
-    <header class="page">
-        <img class="avatar" src="assets/avatar.jpg" alt="Imagem da profissional" loading="eager" width=200
-            height=200 />
+    <header class="page" id="meuHeader">
+        <img class="avatar" src="assets/avatar.jpg" alt="Imagem da profissional" loading="eager" width=200 height=200 />
         <div class="brand">
             <h1 class="cormorant-garamond-titulo">OLGA ANJOS</h1>
             <div class="divider"></div>
@@ -21,9 +19,24 @@
         <p class=montserrat-slogan>Realce sua essência, Todos os dias</p>
         <!-- <p class=montserrat-slogan>✨Sua sobrancelha é única! <br />Não existe molde nem padrão!</p> -->
         <a href="https://wa.me/557197333338">Agende</a>
-        <GalleryPage />
-    </header>
 
+        <!-- Dev -->
+        <div class="painel-controle">
+            <div class="grupo-botoes">
+                <button id="btnMudar">Mudar Cor</button>
+                <button id="btnExcluir">Excluir Cor Atual</button>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee;">
+
+            <div class="grupo-input">
+                <input type="text" id="novaCor" placeholder="Digite uma cor (ex: red, #9b59b6)">
+                <button id="btnAdicionar">Adicionar Cor</button>
+            </div>
+        </div>
+        <!-- Dev -->
+    </header>
+    <script src="script.js"></script>
 </body>
 
 </html>
